@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:17-alpine
 
 WORKDIR /app
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD npm run dev
+CMD yarn run dev
