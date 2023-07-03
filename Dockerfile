@@ -6,7 +6,7 @@ RUN yarn install
 
 WORKDIR /app
 
-RUN yarn add react next react-dom
+RUN yarn add react next react-dom shelljs
 RUN yarn install
 
 COPY . .
