@@ -1,6 +1,6 @@
 # Install dependencies only when needed
-FROM node:alpine AS deps
-RUN apk add --no-cache libc6-compat
+FROM node:alpine
+RUN apk add --no-cache libc6-compat yarn
 
 RUN yarn install
 
