@@ -3,7 +3,7 @@ FROM node:alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-RUN yarn add next
+RUN yarn add react next
 RUN yarn install
 
 COPY . .
