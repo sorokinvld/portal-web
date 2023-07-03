@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY package*.json ./
 
+RUN yarn add @babel/runtime refractor
+
 RUN yarn install
-RUN yarn add @babel/runtime
 
 COPY . .
 
