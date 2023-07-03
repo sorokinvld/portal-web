@@ -7,9 +7,10 @@ RUN yarn install
 WORKDIR /app
 
 RUN yarn add react next react-dom shelljs
-RUN yarn install
 
 COPY . .
+
+RUN yarn install
 
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
