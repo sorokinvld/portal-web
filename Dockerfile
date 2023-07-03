@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN yarn install
+RUN yarn add @babel/runtime
 
 COPY . .
 
