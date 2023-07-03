@@ -1,42 +1,32 @@
-# Test
-FROM node:18-alpine as test-target
-ENV NODE_ENV=development
-ENV PATH $PATH:/usr/src/app/node_modules/.bin
+# Install dependencies only when needed
+FROM node:alpine AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
 
-WORKDIR /usr/src/app
+COPY .yarn ./.yarn
+COPY .pnp.cjs .yarnrc.yml package.json yarn.lock* ./
+RUN yarn install --immutable
 
-COPY package*.json ./
+FROM node:alpine AS runner
+WORKDIR /app
 
-# CI and release builds should use npm ci to fully respect the lockfile.
-# Local development may use npm install for opportunistic package updates.
-ARG npm_install_command=ci
-RUN npm $npm_install_command
-
+COPY --from=deps /app/.yarn ./.yarn
+COPY --from=deps /app/.pnp.cjs ./pnp.cjs
 COPY . .
 
-# Build
-FROM test-target as build-target
-ENV NODE_ENV=production
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
 
-# Use build tools, installed as development packages, to produce a release build.
-RUN npm run build
+RUN yarn build
 
-# Reduce installed packages to production-only.
-RUN npm prune --production
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-# Archive
-FROM node:18-alpine as archive-target
-ENV NODE_ENV=production
-ENV PATH $PATH:/usr/src/app/node_modules/.bin
+USER nextjs
 
-WORKDIR /usr/src/app
-
-# Include only the release build and production packages.
-COPY --from=build-target /usr/src/app/node_modules node_modules
-COPY --from=build-target /usr/src/app/.next .next
-COPY --from=build-target /usr/src/app/public public
-
-# Expose port 3000 for the application to listen on
 EXPOSE 3000
 
-CMD ["next", "start"]
+ENV PORT 3000
+
+CMD ["yarn","node", ".next/standalone/server.js"]
