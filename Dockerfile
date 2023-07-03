@@ -1,9 +1,12 @@
 # Install dependencies only when needed
 FROM node:alpine AS deps
 RUN apk add --no-cache libc6-compat
+
+RUN yarn install
+
 WORKDIR /app
 
-RUN yarn add react next
+RUN yarn add react next react-dom
 RUN yarn install
 
 COPY . .
