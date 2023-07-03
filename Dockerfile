@@ -15,8 +15,6 @@ RUN yarn install
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN yarn run build
-
 EXPOSE 3000
 ENV PORT 3000
 
