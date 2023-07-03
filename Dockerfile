@@ -5,9 +5,6 @@ WORKDIR /app
 
 RUN yarn install
 
-FROM node:alpine AS runner
-WORKDIR /app
-
 COPY . .
 
 ENV NODE_ENV production
