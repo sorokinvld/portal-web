@@ -1,17 +1,11 @@
-# Install dependencies only when needed
-FROM node:alpine AS deps
-RUN apk add --no-cache libc6-compat npm
+FROM node:16-alpine
 
-COPY . .
+COPY package*.json ./
 
 RUN npm install
 
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN npm run build
+COPY . .
 
 EXPOSE 3000
-ENV PORT 3000
 
-CMD ["npm", "run", "dev"]
+CMD npm run dev
