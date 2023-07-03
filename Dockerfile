@@ -11,6 +11,7 @@ RUN yarn add react next react-dom shelljs
 COPY . .
 
 RUN yarn install
+RUN yarn run build
 
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
