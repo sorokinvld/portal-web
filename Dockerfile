@@ -4,15 +4,11 @@ FROM node:alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-COPY .yarn ./.yarn
-COPY .pnp.cjs .yarnrc.yml package.json yarn.lock* ./
 RUN yarn install --immutable
 
 FROM node:alpine AS runner
 WORKDIR /app
 
-COPY --from=deps /app/.yarn ./.yarn
-COPY --from=deps /app/.pnp.cjs ./pnp.cjs
 COPY . .
 
 ENV NODE_ENV production
