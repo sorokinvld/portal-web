@@ -39,7 +39,7 @@ const Application: NextPage<{}> = () => {
           <Grid xs={24} md={8}>
             <HomeCell
               icon={<GitHubIcon />}
-              url="https://github.com/sorokinvld"
+              url="https://prtl.cc"
               title="V"
               desc="Мес."
             />
