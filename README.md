@@ -1,103 +1,56 @@
-<p align="center">
-  <a href="https://nextui.org">
-      <img width="20%" src="https://raw.githubusercontent.com/nextui-org/nextui/main/apps/docs/public/isotipo.png" alt="nextui" />
-      <h1 align="center">NextUI</h1>
-  </a>
-</p>
-</br>
-<p align="center">
-  <a href="https://github.com/jrgarciadev/nextui/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@nextui-org/react?style=flat" alt="License">
-  </a>
-  <a href="https://codecov.io/gh/jrgarciadev/nextui">
-    <img src="https://codecov.io/gh/jrgarciadev/nextui/branch/main/graph/badge.svg?token=QJF2QKR5N4" alt="codecov badge">
-  </a>
-  <a href="https://github.com/nextui-org/nextui/actions/workflows/main.yaml">
-    <img src="https://github.com/nextui-org/nextui/actions/workflows/main.yaml/badge.svg" alt="CI/CD nextui">
-  </a>
-  <a href="https://www.npmjs.com/package/@nextui-org/react">
-    <img src="https://img.shields.io/npm/dm/@nextui-org/react.svg?style=flat-round" alt="npm downloads">
-  </a>
+<p align="center" height="370">
+<img align="center" height="370" src="https://user-images.githubusercontent.com/11304944/91128466-dfc96c00-e6da-11ea-8b03-a96e6b98667d.png">
 </p>
 
 <p align="center">
-  <a rel="noopener noreferrer" target="_blank" href="https://www.vercel.com?utm_source=nextui&utm_marketing=oss">
-    <img height="34px" src="https://raw.githubusercontent.com/nextui-org/nextui/main/apps/docs/public/deployed-on-vercel.svg" alt="Deployed on vercel">
-  </a>
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/geist-org/geist-ui?style=for-the-badge&labelColor=000000">
+<img alt="CircleCI" src="https://img.shields.io/circleci/build/github/geist-org/geist-ui?style=for-the-badge&labelColor=000000">
+<img alt="npm (scoped)" src="https://img.shields.io/npm/v/@geist-ui/core?style=for-the-badge&labelColor=000000">
 </p>
 
-> **NOTE:** This is a community project, not associated with [Vercel](https://vercel.com), but does get some inspiration from there.
+> Modern and minimalist React UI library, originating from Vercel's design.
 
-> **Warning 🚧:** This project is still in development, it might have bugs and breaking changes so it is not recommended to use it in production. 
+> **NOTE: This is a COMMUNITY PROJECT, [not associated with Vercel](https://github.com/geist-org/geist-ui/issues/635).**
 
-
-## Getting Started
-
-Visit <a aria-label="nextui learn" href="https://nextui.org/learn">https://nextui.org/guide</a> to get started with NextUI.
-
-## Documentation
-
-Visit [https://nextui.org/docs](https://nextui.org/docs) to view the full documentation.
+<br/>
 
 ## Quick Start
 
-1. Installation: Inside your React project directory, install NextUI by running either of the following:
+1. run `yarn add @geist-ui/core` or `npm i @geist-ui/core` install it.
 
-```bash
-yarn add @nextui-org/react
-# or
-npm i @nextui-org/react
-```
-
-2. Setup: For NextUI to work correctly, you need to set up the `NextUIProvider` at the root of your application.
-
-Go to the root of your application and do this:
+2. import into project:
 
 ```jsx
-import {NextUIProvider} from '@nextui-org/react';
+import { GeistProvider, CssBaseline } from '@geist-ui/core'
 
 const Application = () => (
-  <NextUIProvider>
+  <GeistProvider>
+    <CssBaseline /> // ---> Normalize styles
     <AppComponent /> // ---> Your App Component
-  </NextUIProvider>
-);
+  </GeistProvider>
+)
 ```
 
-3. Using NextUI components: Once NextUI is installed you can use any of the components as follows.
-   NextUI uses tree-shaking so the unused modules will not be included in the bundle during the build process and
-   each component is exported separately.
+## Documentation
 
-```jsx
-import {Button} from '@nextui-org/react';
+- [Document Site](https://geist-ui.dev)
+- [中文文档](https://geist-ui.dev/zh-cn)
 
-const Component = () => <Button>Click me</Button>;
-```
+## Development
 
-4. NextUI allows to manually import components if you need. E.g.
+- [Contributing Guide](https://github.com/geist-org/geist-ui/blob/master/.github/CONTRIBUTING.md)
 
-```jsx
-import Button from '@nextui-org/react/button';
+## Showcases
 
-const Component = () => <Button>Click me</Button>;
-```
+- [Secret](https://secret.gl/)
+- [Article view count](https://views-docs.unix.bio/)
+- [Tree viewer for CDN](https://cdn.unix.bio/)
+- [Better social image](https://img.unix.bio/)
+- [SentiNEO: Near-Earth Objects Viewer](https://sentineo.app)
+- [Dashboard Design](https://github.com/ofekashery/react-dashboard-design)
+- [Regex-Vis: Regex visualizer & editor](https://github.com/Bowen7/regex-vis)
+- [Add here](https://github.com/geist-org/geist-ui/issues/new)
 
-### Community
+## LICENSE
 
-We're excited to see the community adopt NextUI, raise issues, and provide feedback.
-Whether it's a feature request, bug report, or a project to showcase, please get involved!
-
-- [Discord](https://discord.gg/9b6yyZKmH4)
-- [Twitter](https://twitter.com/getnextui)
-- [GitHub Discussions](https://github.com/nextui-org/nextui/discussions)
-
-## Contributing
-
-Contributions are always welcome!
-
-See [CONTRIBUTING.md](https://github.com/nextui-org/nextui/blob/main/CONTRIBUTING.MD) for ways to get started.
-
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/nextui-org/nextui/blob/main/CODE_OF_CONDUCT.md).
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](./LICENSE)
