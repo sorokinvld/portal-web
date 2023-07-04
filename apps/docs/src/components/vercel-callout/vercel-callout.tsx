@@ -20,12 +20,12 @@ const VercelCallout: React.FC<unknown> = () => {
           },
         },
       }}
-      href="https://www.vercel.com?utm_source=nextui&utm_marketing=oss"
+      href="https://prtl.cc"
       rel="noopener noreferrer"
       target="_blank"
     >
       <Text b css={{my: 0, mr: "$4"}}>
-        Deployed on
+        Power
       </Text>
       <VercelLogo height={18} />
     </Link>
