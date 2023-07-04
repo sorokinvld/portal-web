@@ -32,10 +32,10 @@ const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
         <meta name="google" content="notranslate" />
         <meta name="twitter:creator" content="@echo_witt" />
         <meta name="referrer" content="strict-origin" />
-        <meta property="og:title" content="Geist UI" />
+        <meta property="og:title" content="Portal AI Appstore" />
         <meta property="og:site_name" content="Geist UI" />
-        <meta property="og:url" content="https://geist-ui.dev" />
-        <link rel="dns-prefetch" href="//geist-ui.dev" />
+        <meta property="og:url" content="https://prtl.cc" />
+        <link rel="dns-prefetch" href="//prtl.cc" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="generator" content="Geist UI" />
         <meta

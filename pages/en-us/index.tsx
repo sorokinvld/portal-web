@@ -25,7 +25,7 @@ const Application: NextPage<{}> = () => {
               icon={<PackageIcon />}
               url="/en-us/components"
               title="Components"
-              desc="Ever-increasing list of concise and aesthetic components."
+              desc="Ассистент."
             />
           </Grid>
           <Grid xs={24} md={8}>
@@ -33,15 +33,15 @@ const Application: NextPage<{}> = () => {
               icon={<FeatherIcon />}
               url="/en-us/guide/themes"
               title="Customizable"
-              desc="Configure sizes, colors, appearances, shapes, and more."
+              desc="Агенты."
             />
           </Grid>
           <Grid xs={24} md={8}>
             <HomeCell
               icon={<GitHubIcon />}
-              url="https://github.com/geist-org/geist-ui"
-              title="Open Sourced"
-              desc="Geist is open sourced and available free under MIT licence."
+              url="https://github.com/sorokinvld"
+              title="V"
+              desc="Мес."
             />
           </Grid>
         </Grid.Container>
