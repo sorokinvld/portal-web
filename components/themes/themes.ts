@@ -39,7 +39,7 @@ const getPresets = (): Array<GeistUIThemes> => {
 }
 
 const getPresetStaticTheme = (): GeistUIThemes => {
-  return lightTheme
+  return darkTheme
 }
 
 const isAvailableThemeType = (type?: string): boolean => {

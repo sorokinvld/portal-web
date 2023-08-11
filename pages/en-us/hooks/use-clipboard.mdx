@@ -8,44 +8,12 @@ export const meta = {
 
 ## useClipboard
 
-Copy string to clipboard.
+Copy string to clipboar
+# Default
+## useBodyScroll
 
-This is custom React hooks, you need to follow the <Link target="_blank" color href="https://reactjs.org/docs/hooks-rules.html">Basic Rules</Link> when you use it.
+Disable scrolling behavior for body or any element, it is useful for displaying popup element or menus.
 
-<Playground
-  scope={{ useClipboard, Button, useToasts }}
-  code={`
-() => {
-  const { setToast } = useToasts()
-  const { copy } = useClipboard()
-  const handler = () => {
-    copy('hello, geist-ui')
-    setToast({ text: 'Text copied.' })
-  }
-  return (
-    <>
-      <Button scale={0.5} auto onClick={handler}>Copy</Button>
-    </>
-  )
-}
-`}
-/>
-
-<Attributes edit="/pages/en-us/hooks/use-clipboard.mdx">
-<Attributes.Title>useClipboard</Attributes.Title>
-
-```ts
-type UseClipboardOptions = {
-  onError: Function
-}
-
-type CopyResult = {
-  copy: (text: string) => void
-}
-
-const useClipboard = (options?: UseClipboardOptions) => CopyResult
-```
-
-</Attributes>
+If the page's scrollbar is set to a user-defined `width` before scrolling is disabled, a `paddingRight` value will be added after disabling to adapt.
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>

@@ -16,6 +16,7 @@ const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
   const themeChangeHandle = (theme: GeistUIThemes) => {
     setCustomTheme(theme)
     setThemeType(theme.type)
+    setThemeType('dark')
   }
 
   useEffect(() => {

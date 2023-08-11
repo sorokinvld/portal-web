@@ -5,14 +5,13 @@ const PoweredBy: React.FC<unknown> = () => {
   return (
     <div className="powered-by">
       <Text mb={0} font="14px" type="secondary">
-        Geist is an open source project from the community.
+        Powered by
       </Text>
       <Text mt={0} font="14px" type="secondary">
-        And is powered by{' '}
+        АО {' '}
         <Link color target="_blank" rel="noreferrer nofollow" href="/powered-by-netlify">
-          Netlify
+          Портал
         </Link>
-        .
       </Text>
       <style jsx>{`
         .powered-by {

@@ -61,7 +61,7 @@ export const breakpoints = defaultBreakpoints
 export const layout = defaultLayout
 
 export const themes: GeistUIThemes = {
-  type: 'light',
+  type: 'dark',
   font,
   layout,
   palette,

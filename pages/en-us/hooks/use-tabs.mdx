@@ -9,46 +9,10 @@ export const meta = {
 
 ## useTabs
 
-`useTabs` provides automatic binding for component [Tabs](/en-us/components/tabs), which can reduce the amount of repetitive code and improve the development experience.
-Using this hooks behaves the same as if you had added `React.useState` manually.
+# Default
+## useBodyScroll
 
-<Playground
-  desc="Control components with Hooks."
-  scope={{ Tabs, Button, Spacer, useTabs }}
-  code={`
-() => {
-  const { setState, bindings } = useTabs('1')
-  return (
-    <>
-      <Button scale={1/3} font="12px" onClick={() => setState('2')}>
-        To Extensible
-      </Button>
-      <Spacer h={.5} />
-      <Tabs {...bindings}>
-        <Tabs.Item label="stateless" value="1">HTTP is stateless, but not sessionless.</Tabs.Item>
-        <Tabs.Item label="extensible" value="2">Introduced in HTTP/1.0, HTTP headers make this protocol easy to extend and experiment with.</Tabs.Item>
-      </Tabs>
-    </>
-  )
-}
-`}
-/>
+Disable scrolling behavior for body or any element, it is useful for displaying popup element or menus.
 
-<Attributes edit="/pages/en-us/hooks/use-tabs.mdx" >
-<Attributes.Title>useTabs</Attributes.Title>
-
-```ts
-type useTabs = (initialValue: string) => {
-  state: string
-  setState: Dispatch<SetStateAction<string>>
-  currentRef: MutableRefObject<string>
-  bindings: {
-    value: string
-    onChange: (val: string) => void
-  }
-}
-```
-
-</Attributes>
-
+If the page's scrollbar is set to a user-defined `width` before scrolling is disabled, a `paddingRight` value will be added after disabling to adapt.
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>
