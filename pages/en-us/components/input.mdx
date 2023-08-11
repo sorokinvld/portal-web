@@ -7,37 +7,10 @@ export const meta = {
   group: 'Data Entry',
 }
 
-## Input
+# Заголовок
+## Подзаголовок
+### 3 level
+Text Text Text Text Text
 
-Retrieve text input from a user.
-
-The Input contain an additional Hooks, see subsection [useInput](/en-us/hooks/use-input) for details.
-
-
-| Attribute         | Description                   | Type                                           | Accepted values                   | Default   |
-| ----------------- | ----------------------------- | ---------------------------------------------- | --------------------------------- | --------- |
-| **value**         | input value                   | `string`                                       | -                                 | -         |
-| **initialValue**  | initial value                 | `string`                                       | -                                 | -         |
-| **placeholder**   | placeholder                   | `string`                                       | -                                 | -         |
-| **type**          | current type                  | `InputTypes`                                   | [InputTypes](#inputtypes)         | `default` |
-| **htmlType**      | native type attr              | `string`                                       | -                                 | `text`    |
-| **readOnly**      | native attr                   | `boolean`                                      | -                                 | `false`   |
-| **disabled**      | disable input                 | `boolean`                                      | -                                 | `false`   |
-| **clearable**     | show clear icon               | `boolean`                                      | -                                 | `false`   |
-| **label**         | text label for input          | `string`                                       | -                                 | -         |
-| **labelRight**    | text label at right for input | `string`                                       | -                                 | -         |
-| **icon**          | icon for input                | `React.ReactNode`                              | -                                 | -         |
-| **iconRight**     | icon at right for input       | `React.ReactNode`                              | -                                 | -         |
-| **iconClickable** | icons are clickable           | `boolean`                                      | -                                 | `false`   |
-| **onIconClick**   | click icon event              | `(e: React.ChangeEvent) => void`               | -                                 | -         |
-| **onChange**      | change event                  | `(e: React.ChangeEvent) => void`               | -                                 | -         |
-| **onClearClick**  | clear icon event              | `(e: React.MouseEvent) => void`                | -                                 | -         |
-| **ref**           | forwardRef                    | <Code>Ref<HTMLInputElement &#124; null></Code> | -                                 | -         |
-| ...               | native props                  | `InputHTMLAttributes`                          | `'alt', 'type', 'className', ...` | -         |
-
-| Attribute      | Description      | Type          | Accepted values             | Default |
-| -------------- | ---------------- | ------------- | --------------------------- | ------- |
-| **hideToggle** | hide toggle icon | `boolean`     | -                           | `false` |
-| ...            | input props      | `Input.Props` | [Input.Props](#input.props) | -       |
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>

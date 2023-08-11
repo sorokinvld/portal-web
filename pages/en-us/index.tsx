@@ -30,7 +30,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<PackageIcon />}
               url="/en-us/components"
-              title={<span style={{ color: 'orange' }}>Customizable</span>}
+              title={<span style={{ color: 'orange' }}>Операционная система</span>}
               desc="Взаимодействуйте с системой на естественном языке с любого устройства, включая очки, часы и домашний сервер"
             />
           </Grid>
@@ -38,7 +38,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<FeatherIcon />}
               url="/en-us/guide/themes"
-              title={<span style={{ color: 'violet' }}>Customizable</span>}
+              title={<span style={{ color: 'violet' }}>Автономные агенты</span>}
               desc="Персональные автономные онлайн ассистенты с искусственным интеллектом и возможностью дообучения"
             />
           </Grid>
@@ -46,8 +46,8 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<GitHubIcon />}
               url="https://prtl.cc"
-              title={<span style={{ color: 'red' }}>Customizable</span>}
-              desc="Облачное хранилище, различающее объекты и смыл фото, видео, документов для создания базы знаний и обучения ассистентов"
+              title={<span style={{ color: 'red' }}>Умное облако</span>}
+              desc="Облачное хранилище, понимающее документы, фото и видео для общения с базой знаний и обучения ассистентов"
               //desc={<span style={{ color: '' }}>Облачное хранилище, различающее объекты и смыл фото, видео, документов для создания базы знаний и обучения ассистентов</span>}
             />
           </Grid>

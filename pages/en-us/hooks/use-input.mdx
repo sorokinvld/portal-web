@@ -7,21 +7,10 @@ export const meta = {
   index: 10,
 }
 
-<Attributes.Title>KeyboardOptions</Attributes.Title>
+# Заголовок
+## Подзаголовок
+### 3 level
+Text Text Text Text Text
 
-| Option         | Description                                        | Type         |
-| -------------- | -------------------------------------------------- | ------------ |
-| **state**      | the value of the Input                             | `string`     |
-| **setState**   | same as React.setState                             | -            |
-| **currentRef** | the current value of Input                         | `string`     |
-| **reset**      | reset the value of Input                           | `() => void` |
-| **bindings**   | auto-binding objects conforming to the Input props | -            |
-
-# Default
-## useBodyScroll
-
-Disable scrolling behavior for body or any element, it is useful for displaying popup element or menus.
-
-If the page's scrollbar is set to a user-defined `width` before scrolling is disabled, a `paddingRight` value will be added after disabling to adapt.
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>
