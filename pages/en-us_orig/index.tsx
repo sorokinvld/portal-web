@@ -9,6 +9,8 @@ import TypingEffect from 'react-typing-effect'
 
 
 
+
+
 const Application: NextPage<{}> = () => {
   const theme = useTheme()
 
