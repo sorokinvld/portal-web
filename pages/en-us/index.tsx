@@ -17,7 +17,7 @@ const Application: NextPage<{}> = () => {
       <div className="layout">
         <div className="hero">
             <h1 className="title" >
-              <TypingEffect className="title" style={{ color: 'purple' }}  text={["Портал"]} speed='300'> 
+              <TypingEffect className="title" style={{ color: 'violet' }}  text={["Портал"]} speed='300'> 
               </TypingEffect>
             </h1>
             <h3 className="desc">
@@ -30,7 +30,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<PackageIcon />}
               url="/en-us/components"
-              title={<span style={{ color: 'orange' }}>Операционная система</span>}
+              title={<span style={{ color: 'orange' }}>Диалоговая ОС</span>}
               desc="Взаимодействуйте с системой на естественном языке с любого устройства, включая очки, часы и домашний сервер"
             />
           </Grid>
@@ -38,7 +38,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<FeatherIcon />}
               url="/en-us/guide/themes"
-              title={<span style={{ color: 'violet' }}>Автономные агенты</span>}
+              title={<span style={{ color: 'pink' }}>Автономные агенты</span>}
               desc="Персональные автономные онлайн ассистенты с искусственным интеллектом и возможностью дообучения"
             />
           </Grid>

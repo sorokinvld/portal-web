@@ -5,11 +5,11 @@ const PoweredBy: React.FC<unknown> = () => {
   return (
     <div className="powered-by">
       <Text mb={0} font="14px" type="secondary">
-        Powered by
+        Сделано людьми 
       </Text>
       <Text mt={0} font="14px" type="secondary">
-        АО {' '}
-        <Link color target="_blank" rel="noreferrer nofollow" href="/powered-by-netlify">
+        в АО {' '}
+        <Link color target="_blank" rel="noreferrer nofollow" href="/">
           Портал
         </Link>
       </Text>
