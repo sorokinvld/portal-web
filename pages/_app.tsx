@@ -33,32 +33,32 @@ const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
         <meta name="google" content="notranslate" />
         <meta name="twitter:creator" content="@echo_witt" />
         <meta name="referrer" content="strict-origin" />
-        <meta property="og:title" content="Портал" />
-        <meta property="og:site_name" content="Портал" />
+        <meta property="og:title" content="АО Портал" />
+        <meta property="og:site_name" content="АО Портал" />
         <meta property="og:url" content="https://prtl.cc" />
-        <link rel="dns-prefetch" href="//geist-ui.dev" />
+        <link rel="dns-prefetch" href="//prtl.cc" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="generator" content="Портал" />
+        <meta name="generator" content="АО Портал" />
         <meta
           name="description"
-          content="An open-source design system for building modern websites and applications."
+          content="Портал — маркетплейс ИИ-приложений."
         />
         <meta
           property="og:description"
-          content="An open-source design system for building modern websites and applications."
+          content="Портал — маркетплейс ИИ-приложений."
         />
         <meta
           itemProp="image"
           property="og:image"
-          content="https://user-images.githubusercontent.com/11304944/91128466-dfc96c00-e6da-11ea-8b03-a96e6b98667d.png"
+          content="/logo.png"
         />
         <meta
           property="og:image"
-          content="https://user-images.githubusercontent.com/11304944/91128466-dfc96c00-e6da-11ea-8b03-a96e6b98667d.png"
+          content="/logo.png"
         />
         <meta
           property="twitter:image"
-          content="https://user-images.githubusercontent.com/11304944/91128466-dfc96c00-e6da-11ea-8b03-a96e6b98667d.png"
+          content="/logo.png"
         />
         <meta
           name="viewport"
