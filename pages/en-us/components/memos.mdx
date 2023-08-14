@@ -1,0 +1,12 @@
+import { Layout, Playground, Attributes } from 'lib/components'
+import { Progress, Spacer, useTheme, Button } from 'components'
+import { useState } from 'react'
+
+export const meta = {
+  title: 'memos',
+  group: 'Веб-приложения',
+}
+
+# Memos - веб-приложение для создания заметок, которое вы можете использовать для написания, упорядочивания заметок и обмена ими.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
