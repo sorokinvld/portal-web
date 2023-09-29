@@ -1,0 +1,15 @@
+import { Layout, Playground, Attributes } from 'lib/components'
+import { useClipboard, Link, Button, useToasts, Spacer } from 'components'
+
+export const meta = {
+  title: 'текст',
+  group: 'текст',
+}
+
+# Заголовок
+## Подзаголовок
+### 3 level
+Text Text Text Text Text
+
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
