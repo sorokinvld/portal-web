@@ -31,7 +31,7 @@ const MenuMobile: React.FC<Props> = ({ expanded }) => {
       <div className="content">
         <NextLink href={`/${locale}`}>
           <a className={`menu-item fadein ${pathname === `/${locale}` ? 'active' : ''}`}>
-            {isChinese ? '主页' : 'Главная'}
+            {isChinese ? '主页' : 'Home'}
           </a>
         </NextLink>
 
