@@ -14,19 +14,17 @@ const Application: NextPage<{}> = () => {
       <div className="layout">
         <div className="hero">
             <h1 className="title" >
-              <TypingEffect className="title" style={{ color: 'violet' }}  text={["Портал"]} speed='300'> 
-              </TypingEffect>
+              <TypingEffect className="title" style={{ color: 'violet' }}  text={["Портал"]} speed='300'> </TypingEffect>
             </h1>
             <h3 className="desc">
-            <TypingEffect  speed='30' text={["Облачная диалоговая операционная система с графическими и текстовыми интерфейсами и интегрированными ИИ-ассистентами"]}>
-            </TypingEffect>
+            <TypingEffect  speed='30' text={["Облачная диалоговая операционная система с графическими и текстовыми интерфейсами и интегрированными ИИ-ассистентами"]}> </TypingEffect>
           </h3>
         </div>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} md={8}>
             <HomeCell
               icon={<PackageIcon />}
-              url="/en-us/components"
+              url="/en-us/Разработки"
               title={<span style={{ color: 'white' }}>Диалоговая ОС</span>}
               desc="Облачная операционная система с возможностью взаимодействия на естественном языке с любого устройства, включая очки, часы и домашний сервер"
               />
@@ -44,7 +42,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               title={<span style={{ color: 'red' }}>Автономные ассистенты</span>}
               icon={<FeatherIcon />}
-              url="/en-us/components/agent"
+              url="/en-us/Разработки/agents"
               desc="Персональные автономные цифровые онлайн и оффлайн ассистенты на основе мультимодельных ансамлей и векторных систем хранения данных"
               />
           </Grid>
