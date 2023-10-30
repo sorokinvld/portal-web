@@ -24,7 +24,7 @@ const Application: NextPage<{}> = () => {
           <Grid xs={24} md={8}>
             <HomeCell
               icon={<PackageIcon />}
-              url="/en-us/Разработки"
+              url="/en-us/portal"
               title={<span style={{ color: 'white' }}>Диалоговая ОС</span>}
               desc="Облачная операционная система с возможностью взаимодействия на естественном языке с любого устройства, включая очки, часы и домашний сервер"
               />
@@ -42,7 +42,7 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               title={<span style={{ color: 'red' }}>Автономные ассистенты</span>}
               icon={<FeatherIcon />}
-              url="/en-us/Разработки/agents"
+              url="/en-us/we/"
               desc="Персональные автономные цифровые онлайн и оффлайн ассистенты на основе мультимодельных ансамлей и векторных систем хранения данных"
               />
           </Grid>
