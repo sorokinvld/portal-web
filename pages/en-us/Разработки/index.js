@@ -1,3 +1,3 @@
 import redirect from 'lib/redirect'
 
-export default redirect('/en-us/Разработки/agents')
+export default redirect('/en-us/Разработки/assisstants')
