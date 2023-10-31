@@ -1,3 +1,3 @@
 import redirect from 'lib/redirect'
 
-export default redirect('/en-us/portal/os')
+export default redirect('/en-us/portal/portal')
