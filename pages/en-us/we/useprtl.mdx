@@ -6,10 +6,22 @@ export const meta = {
   group: 'текст',
 }
 
-# Заголовок
-## Подзаголовок
-### 3 level
-Text Text Text Text Text
-
+<>
+  <Text>
+    In server-driven content negotiation, or proactive content negotiation,
+    the browser (or any other kind of user-agent) sends several HTTP headers along with the URL.
+    These headers describe the preferred choice of the user.
+  </Text>
+  <Divider>HTTP</Divider>
+  <Text>
+    The server uses them as hints and an internal algorithm chooses the best content to serve to the client.
+    The algorithm is server-specific and not defined in the standard.
+  </Text>
+  <Divider align="start">standard headers</Divider>
+  <Text>
+    The HTTP/1.1 standard defines list of the standard headers that start server-driven negotiation
+    (Accept, Accept-Charset, Accept-Encoding, Accept-Language)
+  </Text>
+</>
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>
