@@ -47,14 +47,8 @@ const Application: NextPage<{}> = () => {
               />
           </Grid>
         </Grid.Container>
-            <h1 className="title" >
-              <TypingEffect className="title" style={{ color: 'violet' }}  text={["Портал Агент"]} speed='300'> 
-              </TypingEffect>
-            </h1>
-            <h3 className="desc">
-            <TypingEffect  speed='30' text={["Портал Ассистент - Ваш персональный помощник."]}>
-          </TypingEffect>
-          </h3>
+            <h1 className="title"> Портал Ассистенты </h1>
+            <h3 className="desc"> Персональные автономные облачные помощники </h3>
         <Collapse.Group>
             <Collapse title="Портал" initialVisible>
               <Text>Спрашивайте у операционной системы, где находится нужный документ или файл мультимедиа, ставьте задачи по выполнению необходимых наборов процедур, начинайте взаимодейтсвие с системой на одном и заканчивайте на другом устройстве.</Text>
@@ -73,6 +67,9 @@ const Application: NextPage<{}> = () => {
         <p className="contact">
           <Link href="mailto:portal@ic-ie.com?subject=Открыть Портал&body=Заявка на получение ограниченного доступа к экземпляру ОС Портал" color>
             Получить приглашение
+          </Link>
+          <Link href="https://t.me/prtlcc_bot" color>
+            Телеграм-бот
           </Link>
         </p>
         </div>
