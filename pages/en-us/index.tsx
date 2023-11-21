@@ -33,14 +33,14 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<GitHubIcon />}
               url="https://prtl.cc/en-us/we/"
-              title={<span style={{ color: 'violet' }}>Умное облако</span>}
+              title={<span style={{ color: 'white' }}>Умное облако</span>}
               desc="Защищенное облачное хранилище, с интеллектульным семантическим поиском по смыслу с распознаванием объектов и событий на фото и видео"
               //desc={<span style={{ color: '' }}>Облачное хранилище, различающее объекты и смыл фото, видео, документов для создания базы знаний и обучения ассистентов</span>}
               />
           </Grid>
           <Grid xs={24} md={8}>
             <HomeCell
-              title={<span style={{ color: 'orange' }}>Автономные ассистенты</span>}
+              title={<span style={{ color: 'white' }}>Автономные ассистенты</span>}
               icon={<FeatherIcon />}
               url="/en-us/we/"
               desc="Персональные автономные цифровые онлайн и оффлайн ассистенты на основе мультимодельных ансамлей и векторных систем хранения данных"
