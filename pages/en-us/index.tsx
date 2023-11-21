@@ -61,13 +61,14 @@ const Application: NextPage<{}> = () => {
             </Collapse>
           </Collapse.Group>
       </div>
-
         <div className="footer">
         <img src='images/logo.png' alt="Logo" className="logo" />
         <p className="contact">
           <Link href="mailto:portal@ic-ie.com?subject=Открыть Портал&body=Заявка на получение ограниченного доступа к экземпляру ОС Портал" color>
             Получить приглашение
           </Link>
+        </p>
+        <p className="contact">
           <Link href="https://t.me/prtlcc_bot" color>
             Телеграм-бот
           </Link>
