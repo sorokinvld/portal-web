@@ -33,28 +33,22 @@ const Application: NextPage<{}> = () => {
             <HomeCell
               icon={<GitHubIcon />}
               url="https://prtl.cc/en-us/we/"
-              title={<span style={{ color: 'violet' }}>Умное облако</span>}
+              title={<span style={{ color: 'white' }}>Умное облако</span>}
               desc="Защищенное облачное хранилище, с интеллектульным семантическим поиском по смыслу с распознаванием объектов и событий на фото и видео"
               //desc={<span style={{ color: '' }}>Облачное хранилище, различающее объекты и смыл фото, видео, документов для создания базы знаний и обучения ассистентов</span>}
               />
           </Grid>
           <Grid xs={24} md={8}>
             <HomeCell
-              title={<span style={{ color: 'orange' }}>Автономные ассистенты</span>}
+              title={<span style={{ color: 'white' }}>Автономные ассистенты</span>}
               icon={<FeatherIcon />}
               url="/en-us/we/"
               desc="Персональные автономные цифровые онлайн и оффлайн ассистенты на основе мультимодельных ансамлей и векторных систем хранения данных"
               />
           </Grid>
         </Grid.Container>
-            <h1 className="title" >
-              <TypingEffect className="title" style={{ color: 'violet' }}  text={["Портал Агент"]} speed='300'> 
-              </TypingEffect>
-            </h1>
-            <h3 className="desc">
-            <TypingEffect  speed='30' text={["Портал Ассистент - Ваш персональный помощник."]}>
-          </TypingEffect>
-          </h3>
+            <h1 className="title"> Портал Ассистенты </h1>
+            <h3 className="desc"> Персональные автономные облачные помощники </h3>
         <Collapse.Group>
             <Collapse title="Портал" initialVisible>
               <Text>Спрашивайте у операционной системы, где находится нужный документ или файл мультимедиа, ставьте задачи по выполнению необходимых наборов процедур, начинайте взаимодейтсвие с системой на одном и заканчивайте на другом устройстве.</Text>
@@ -67,12 +61,16 @@ const Application: NextPage<{}> = () => {
             </Collapse>
           </Collapse.Group>
       </div>
-
         <div className="footer">
         <img src='images/logo.png' alt="Logo" className="logo" />
         <p className="contact">
           <Link href="mailto:portal@ic-ie.com?subject=Открыть Портал&body=Заявка на получение ограниченного доступа к экземпляру ОС Портал" color>
             Получить приглашение
+          </Link>
+        </p>
+        <p className="contact">
+          <Link href="https://t.me/prtlcc_bot" color>
+            Телеграм-бот
           </Link>
         </p>
         </div>
